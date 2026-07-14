@@ -394,7 +394,7 @@
   // real da cobranca (o front so informa se o bump foi marcado ou nao)
   // e repassa a requisicao pra PayShark.
   // =========================
-  const API_BASE_URL = 'https://hotmartcurso.click/'; // TODO: trocar pela URL real depois do deploy na Vercel
+  const API_BASE_URL = 'https://hotmartcurso.click'; // domínio real, sem barra no final pra evitar // na URL final
 
   async function criarTransacaoPix() {
     const nome  = document.getElementById('nome').value.trim();
