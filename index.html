@@ -11,34 +11,34 @@
     html{-webkit-text-size-adjust:100%;background:var(--bg)}
     body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased}
     button,input{font:inherit}
-    .topbar{height:33px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;position:sticky;top:0;z-index:3;letter-spacing:-.01em}
-    .page{max-width:364px;margin:0 auto;min-height:calc(100vh - 33px);background:var(--bg);padding:12px 11px 24px}
-    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:8px;padding:12px 11px 11px;box-shadow:0 1px 2px rgba(15,23,42,.025)}
-    .product{display:grid;grid-template-columns:52px 1fr 22px;gap:11px;align-items:start;min-height:39px}
-    .product-logo-img{width:52px;height:37px;min-width:52px;min-height:37px;border-radius:3px;object-fit:cover;display:block}
-    .product-title{font-size:12px;font-weight:700;line-height:1.15;margin-top:1px;letter-spacing:-.01em}
-    .price{font-size:12px;color:#64646d;margin-top:3px}
-    .chev{border:0;background:none;padding:0;margin-top:1px;width:22px;height:22px;font-size:17px;line-height:1;cursor:pointer;color:#111;display:flex;align-items:center;justify-content:center}
-    .coupon{margin-left:63px;margin-top:-1px}
-    .coupon button{border:0;background:#fafafa;border-radius:5px;padding:7px 10px;font-size:11px;cursor:pointer;color:#111;transition:background .15s ease}.coupon button:hover{background:#f5f5f5}
-    .section-title{font-size:12px;font-weight:500;margin:24px 0 5px}
-    .section-title.pay{font-size:14px;font-weight:700;margin-top:20px;margin-bottom:11px;letter-spacing:-.015em}
+    .topbar{min-height:40px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;padding:8px 14px;font-size:13px;font-weight:600;position:sticky;top:0;z-index:3;letter-spacing:-.01em;text-align:center}
+    .page{width:min(100%,560px);margin:0 auto;min-height:calc(100vh - 40px);background:var(--bg);padding:24px 18px 32px}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:12px;padding:20px;box-shadow:0 6px 24px rgba(15,23,42,.06)}
+    .product{display:grid;grid-template-columns:70px 1fr 28px;gap:14px;align-items:center;min-height:50px}
+    .product-logo-img{width:70px;height:50px;min-width:70px;min-height:50px;border-radius:6px;object-fit:cover;display:block}
+    .product-title{font-size:16px;font-weight:700;line-height:1.2;margin-top:0;letter-spacing:-.01em}
+    .price{font-size:14px;color:#64646d;margin-top:5px}
+    .chev{border:0;background:none;padding:0;margin-top:0;width:28px;height:28px;font-size:20px;line-height:1;cursor:pointer;color:#111;display:flex;align-items:center;justify-content:center}
+    .coupon{margin-left:84px;margin-top:4px}
+    .coupon button{border:0;background:#fafafa;border-radius:7px;padding:9px 12px;font-size:13px;cursor:pointer;color:#111;transition:background .15s ease}.coupon button:hover{background:#f5f5f5}
+    .section-title{font-size:14px;font-weight:600;margin:28px 0 8px}
+    .section-title.pay{font-size:17px;font-weight:700;margin-top:26px;margin-bottom:12px;letter-spacing:-.015em}
     .field-group{border:1px solid var(--border);border-radius:8px;overflow:hidden;background:#fff;transition:border-color .15s ease,box-shadow .15s ease}.field-group:focus-within{border-color:#b8bcc4;box-shadow:0 0 0 1px rgba(17,17,17,.03)}
-    .field-row{height:35px;display:flex;align-items:center;border-bottom:1px solid #eceef1;padding:0 9px;gap:9px;background:#fff}
+    .field-row{height:48px;display:flex;align-items:center;border-bottom:1px solid #eceef1;padding:0 13px;gap:10px;background:#fff}
     .field-row:last-child{border-bottom:0}
-    .field-row input{border:0;outline:0;width:100%;height:100%;font-size:12px;color:#111;background:transparent;min-width:0;padding:0}
+    .field-row input{border:0;outline:0;width:100%;height:100%;font-size:14px;color:#111;background:transparent;min-width:0;padding:0}
     .field-row input::placeholder{color:#a7a9b5;opacity:1}
-    .flag{font-size:16px;line-height:1;display:flex;align-items:center}
-    .payment-box{width:100px;height:63px;border:2px solid #111;border-radius:7px;padding:8px;display:flex;flex-direction:column;justify-content:flex-start;gap:5px;font-size:12px;background:#fff;box-shadow:inset 0 0 0 1px rgba(0,0,0,.015)}
+    .flag{font-size:18px;line-height:1;display:flex;align-items:center}
+    .payment-box{width:128px;height:78px;border:2px solid #111;border-radius:9px;padding:12px;display:flex;flex-direction:column;justify-content:flex-start;gap:8px;font-size:14px;font-weight:600;background:#fff;box-shadow:inset 0 0 0 1px rgba(0,0,0,.015)}
     .pix-icon{font-size:15px;line-height:1;height:20px;display:flex;align-items:center;color:#111}.pix-icon svg{display:block;width:20px;height:20px}
-    .doc-label{font-size:11px;margin:13px 0 5px}
-    .single-input{height:36px;border:1px solid var(--border);border-radius:7px;padding:0 9px;width:100%;outline:0;font-size:12px;background:#fff;transition:border-color .15s ease,box-shadow .15s ease}.single-input:focus{border-color:#b8bcc4;box-shadow:0 0 0 1px rgba(17,17,17,.03)}
+    .doc-label{font-size:14px;font-weight:600;margin:18px 0 8px}
+    .single-input{height:48px;border:1px solid var(--border);border-radius:8px;padding:0 13px;width:100%;outline:0;font-size:14px;background:#fff;transition:border-color .15s ease,box-shadow .15s ease}.single-input:focus{border-color:#b8bcc4;box-shadow:0 0 0 1px rgba(17,17,17,.03)}
     .single-input::placeholder{color:#a7a9b5}
-    .pay-btn{width:100%;height:33px;border:0;border-radius:5px;background:#050505;color:#a7a7a7;font-size:12px;font-weight:700;margin-top:25px;cursor:not-allowed;transition:opacity .15s ease,transform .08s ease,color .15s ease}
+    .pay-btn{width:100%;height:48px;border:0;border-radius:8px;background:#050505;color:#a7a7a7;font-size:15px;font-weight:700;margin-top:28px;cursor:not-allowed;transition:opacity .15s ease,transform .08s ease,color .15s ease}
     .pay-btn.active{color:#fff;cursor:pointer}.pay-btn.active:hover{opacity:.94}.pay-btn.active:active{transform:translateY(1px)}
-    .security{display:flex;align-items:center;justify-content:center;gap:6px;color:#75757d;font-size:10px;margin-top:12px;white-space:nowrap}
+    .security{display:flex;align-items:center;justify-content:center;gap:7px;color:#75757d;font-size:12px;margin-top:14px;white-space:nowrap}
     .lock{color:#00bf67;width:14px;height:14px;display:inline-flex;align-items:center;justify-content:center}.lock svg{width:14px;height:14px;display:block}
-    footer{text-align:center;color:#7b7b83;font-size:10px;padding:54px 4px 0;line-height:1.45}
+    footer{text-align:center;color:#7b7b83;font-size:12px;padding:46px 4px 0;line-height:1.5}
     footer .terms{margin-bottom:17px}
     footer .powered{margin:0 0 14px;display:flex;align-items:center;justify-content:center;gap:5px}footer .powered svg{width:71px;height:16px;display:block}
     footer .links{display:flex;justify-content:center;gap:8px;color:#222;align-items:center}
@@ -57,7 +57,30 @@
     .status{font-size:11px!important;text-align:center;color:#777!important;margin-top:10px!important}
     .error{font-size:10px;color:#d90000;display:none;margin-top:5px}
     @keyframes modalIn{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}
-    @media(max-width:380px){.topbar{position:relative}}
+    @media(max-width:600px){
+      .topbar{position:relative;min-height:38px;font-size:12px;padding:7px 10px}
+      .page{width:100%;padding:12px 10px 24px}
+      .card{border-radius:10px;padding:15px 13px}
+      .product{grid-template-columns:58px 1fr 24px;gap:11px}
+      .product-logo-img{width:58px;height:42px;min-width:58px;min-height:42px}
+      .product-title{font-size:14px}
+      .price{font-size:13px}
+      .coupon{margin-left:69px}
+      .coupon button{font-size:12px;padding:8px 10px}
+      .section-title{font-size:13px;margin-top:24px}
+      .section-title.pay{font-size:16px}
+      .field-row{height:46px;padding:0 11px}
+      .field-row input,.single-input{font-size:16px}
+      .payment-box{width:116px;height:72px;padding:10px;font-size:13px}
+      .single-input{height:46px}
+      .pay-btn{height:46px;font-size:14px}
+      .security{font-size:10px;white-space:normal;text-align:center}
+      footer{font-size:10px;padding-top:38px}
+    }
+    @media(max-width:360px){
+      .page{padding-left:7px;padding-right:7px}
+      .card{padding-left:11px;padding-right:11px}
+    }
   </style>
 </head>
 <body>
